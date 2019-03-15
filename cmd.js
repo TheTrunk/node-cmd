@@ -8,7 +8,7 @@ var commandline={
 function runCommand(command){
     //return refrence to the child process
     return exec(
-        command
+        command,
         {maxBuffer: Infinity}
     );
 }
