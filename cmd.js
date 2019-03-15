@@ -9,6 +9,7 @@ function runCommand(command){
     //return refrence to the child process
     return exec(
         command
+        {maxBuffer: Infinity}
     );
 }
 
@@ -16,6 +17,7 @@ function getString(command,callback){
     //return refrence to the child process
     return exec(
         command,
+        {maxBuffer: Infinity}
         (
             function(){
                 return function(err,data,stderr){
