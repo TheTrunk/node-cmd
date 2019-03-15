@@ -17,7 +17,7 @@ function getString(command,callback){
     //return refrence to the child process
     return exec(
         command,
-        {maxBuffer: Infinity}
+        {maxBuffer: Infinity},
         (
             function(){
                 return function(err,data,stderr){
